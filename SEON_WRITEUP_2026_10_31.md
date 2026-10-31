@@ -122,6 +122,12 @@ family).
   encryption* (the same boundary every client-side red team uses), so the
   session confidentiality wasn't the target; the trust model is.
 
+## See it live — screenshot of the full payload
+
+![SEON — session format + readable pre-encryption tree + tamper differential (full page)](screenshots/seon-full.png)
+
+*Full-page capture of `scripts/seon-visual.mjs` (headed demo): the client-minted session wire format, the complete 9,713-byte readable fingerprint tree (every record with value + status), and the clean-vs-tampered session differential.*
+
 ## Repo layout
 
 ```
