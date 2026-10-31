@@ -1,0 +1,9 @@
+{
+  "name": "dfp-redteam-seon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SEON v6 JS device-fingerprint SDK client-side red team: readable pre-encryption payload, custom cipher, session tamper proof (authorized, local-only, 2026-10-31)",
+  "scripts": { "session": "node scripts/seon-session.mjs", "tree": "node scripts/seon-full-tree.mjs", "tamper": "node scripts/seon-tamper.mjs", "demo": "node scripts/seon-visual.mjs" },
+  "dependencies": { "playwright": "^1" }
+}
