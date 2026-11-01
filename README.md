@@ -26,6 +26,27 @@ probes) is readable end-to-end — see the writeup's captured JSON.
 - 🟢 Tamper with payload: mint + tamper any signal before the custom cipher seals it
 - 🟢 Mint token: session (`W;ver;salt;cipher`) fully client-minted
 
+## Demo video — the full pre-encryption payload
+
+**Watch the capture** (terminal capture of `scripts/demo-seon.py` printing the
+complete payload tree — canvas, webgl, fonts, screen, UA probes — as it exists
+before the custom cipher seals it, no truncation):
+
+<img src="assets/videos/full-payload-demo.gif" width="720" alt="SEON full payload demo" />
+
+<video controls preload="metadata" width="720"><source src="assets/videos/full-payload-demo.mp4" type="video/mp4"></video>
+
+Reproduce it yourself:
+
+```bash
+python3 scripts/demo-seon.py artifacts/plaintext2.json
+```
+
+Full payload artifacts: [plaintext2.json](artifacts/plaintext2.json) ·
+[full-tree.json](artifacts/full-tree.json) ·
+[tamper-results.json](artifacts/tamper-results.json)
+[Download the mp4](https://raw.githubusercontent.com/JWally/dfp-redteam-seon/main/assets/videos/full-payload-demo.mp4)
+
 ## Files
 
 - writeup: `SEON_WRITEUP_2026_10_31.md`
